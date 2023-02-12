@@ -8,11 +8,10 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Главное меню</h1>
+      <a class="logo-header" href="index.html">
+        <img class="logo-header" src="images/logo.svg" width="138" height="64" alt="Логотип Седона"></a>
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <img class="logo" src="#" alt="Логотип Седоны">
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -33,9 +32,7 @@
             <a class="navigation-link" href="#">Избранное</a>
           </li>
           <li class="navigation-item">
-            <button class="button-brown">
-              Хочу сюда!
-            </button>
+            <a class="button-brown" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -55,7 +52,7 @@
           </li>
         </ul>
 
-        <section class="catalog-filter-hotels">
+        <section class="catalog-filter-hotels" data-test="filter">
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-infrastructure">
@@ -125,43 +122,47 @@
         </a>
       </section>
 
-      <section class="catalog-hotels">
+      <section class="catalog-hotels" data-test="catalog">
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
-            <img class="hotel-card-image" src="#" alt="amara resort">
+            <img class="hotel-card-image" src="images/hotel-1.jpg" wight="300" height="212" alt="amara resort">
             <h3 class="hotel-card-title">Amara resort & spa</h3>
             <p class="hotel-dwelling">Гостиница</p>
             <p class="hotel-price">От 4000 ₽</p>
             <a class="button-brown" href="#">Подробнее</a>
+            <a class="button-blu" href="#">В Избранное</a>
           <!--Добавить "в избранном" и "рейтинг"-->
           </li>
           <li class="hotel-card-item">
-            <img class="hotel-card-image" src="#" alt="villas-at-poco-diablo">
+            <img class="hotel-card-image" src="images/hotel-2.jpg" wight="300" height="212" alt="villas-at-poco-diablo">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             <p class="hotel-dwelling">Гостиница</p>
             <p class="hotel-price">От 5000 ₽</p>
             <a class="button-brown" href="#">Подробнее</a>
+            <a class="button-blu" href="#">В Избранное</a>
           <!--Добавить "в избранном" и "рейтинг"-->
           </li>
           <li class="hotel-card-item">
-            <img class="hotel-card-image" src="#" alt="desert-quail-inn">
+            <img class="hotel-card-image" src="images/hotel-3.jpg" wight="300" height="212" alt="desert-quail-inn">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
             <p class="hotel-dwelling">Гостиница</p>
             <p class="hotel-price">От 2500 ₽</p>
             <a class="button-brown" href="#">Подробнее</a>
+            <a class="button-blu" href="#">В Избранное</a>
           <!--Добавить "в избранном" и "рейтинг"-->
           </li>
           <li class="hotel-card-item">
-            <img class="hotel-card-image" src="#" alt="greentree-inn">
+            <img class="hotel-card-image" src="images/hotel-4.jpg"  alt="greentree-inn">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
             <p class="hotel-dwelling">Гостиница</p>
             <p class="hotel-price">От 1500 ₽</p>
             <a class="button-brown" href="#">Подробнее</a>
+            <a class="button-blu" href="#">В Избранное</a>
           <!--Добавить "в избранном" и "рейтинг"-->
           </li>
         </ul>
 
-        <ul class="pagination">
+        <ol class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -180,7 +181,7 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-        </ul>
+        </ol>
       </section>
     </main>
 
