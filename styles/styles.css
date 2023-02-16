@@ -19,7 +19,7 @@ body {
   font-size: 26px;
   line-height: 24px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #e6e6e6;
 }
 
 .navigation-link {
@@ -28,7 +28,6 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   color: inherit;
 }
 
@@ -58,15 +57,24 @@ body {
   text-align: center;
 }
 
-.advantages-list {
+.advantages-item {
   background-color: #82B3D3;
+  text-align: center;
+  }
+
+.advantages-item-square,
+.advantages-item-tourist {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-road {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   }
@@ -111,6 +119,12 @@ body {
   text-align: center;
 }
 
+.service-item-dwelling,
+.service-item-souvenir,
+.service-item-food {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .service-item-title {
   font-size: 24px;
   line-height: 28px;
@@ -150,6 +164,7 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .page-subscribe {
@@ -177,15 +192,10 @@ body {
   color: #ffffff
   }
 
-.subscribe-form {
-  text-align: center;
-}
-
 .button-subscribe {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
@@ -201,11 +211,13 @@ body {
   color: inherit;
 }
 
+/* каталог */
+
 .inner-header {
   color: #ffffff;
   background-color: #82B3D3;
   background-image: url("../images/filter.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

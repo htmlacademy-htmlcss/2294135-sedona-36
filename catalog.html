@@ -23,26 +23,28 @@
             <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link navigation-user-link-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Избранное</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link button-navigation" href="#">Хочу сюда!</a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link navigation-user-link-favorite" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span>12</span>
+            </a>
           </li>
         </ul>
+        <a class="button-brown button-navigation" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
     <main class="main-inner">
       <header class="inner-header" data-test="filter">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Главная</span>
@@ -51,7 +53,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
-        </ul>
+        </ol>
 
         <section class="catalog-filter-hotels">
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
@@ -112,15 +114,17 @@
           <option value="expensive">Сначала дорогие</option>
         </select>
 
-        <a class="button-transparent" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button-transparent" href="#">
-          <span class="visually-hidden">Показать один вариант</span>
-        </a>
-        <a class="button-transparent" href="#">
-          <span class="visually-hidden">Список</span>
-        </a>
+        <ul class="display-type">
+          <li><a class="button-transparent" href="#">
+            <span class="visually-hidden">Показать карточки</span></a>
+          </li>
+          <li><a class="button-transparent" href="#">
+            <span class="visually-hidden">Показать один вариант</span></a>
+          </li>
+          <li><a class="button-transparent" href="#">
+            <span class="visually-hidden">Список</span></a>
+          </li>
+        </ul>
       </section>
 
       <section class="catalog-hotels" data-test="catalog">
@@ -184,9 +188,7 @@
           </li>
         </uSl>
       </section>
-    </main>
 
-    <footer class="inner-footer" data-test="footer">
       <section class="inner-subscribe" data-test="subscribe">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <h2 class="inner-subscribe-title">Подпишитесь на рассылку</h2>
@@ -196,6 +198,9 @@
           <button class="button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
+    </main>
+
+    <footer class="inner-footer" data-test="footer">
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
