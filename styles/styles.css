@@ -14,12 +14,49 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 26px;
   line-height: 24px;
   color: #000000;
-  background-color: #e6e6e6;
+  background-color: #e5e5e5;
+  margin: 0 auto;
+  height: 100%;
+  width: 1200px;
+}
+
+.page-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 507px;
+}
+
+.navigation-user {
+  margin: 0;
+  padding: 0;
+  width: 268px;
 }
 
 .navigation-link {
@@ -31,6 +68,15 @@ body {
   color: inherit;
 }
 
+ sup {
+ font-size: 10px;
+ line-height: 10px;
+ text-align: center;
+ vertical-align: top;
+ color: #FFFFFF;
+ background-color: #7DB54F;
+}
+
 .button-navigation {
   font-size: 16px;
   line-height: 20px;
@@ -40,6 +86,20 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.hero {
+  width: 1200px;
+  height: 485px;
+  background-image: url(../images/index-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-img {
+display: block;
+margin: 0 auto;
+padding: 51px 371px 82px;
 }
 
 .title {
@@ -57,18 +117,37 @@ body {
   text-align: center;
 }
 
+.advantages-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+  list-style-type: none;
+}
+
 .advantages-item {
   background-color: #82B3D3;
   text-align: center;
-  }
+  height: 385px;
+}
+
+.advantages-item-town,
+.advantages-item-bridge {
+  width: 400px;
+
+}
 
 .advantages-item-square,
 .advantages-item-tourist {
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .advantages-item-road {
   background-color: rgba(131, 179, 211, 0.2);
+  width: 400px;
 }
 
 .advantages-title {
@@ -76,8 +155,12 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
-  }
+  padding-top: 112px;
+  padding-left: 112px;
+  padding-right: 112px;
+}
 
 .advantages-description {
   font-size: 18px;
@@ -85,23 +168,14 @@ body {
   font-weight: 400;
   text-align: center;
   color: #ffffff;
-  }
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 112px;
+}
 
-.advantages-title-black {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: inherit
-  }
-
+.advantages-title-black,
 .advantages-description-black {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  text-align: center;
-  color: inherit;
+  color: inherit
 }
 
 .service-title {
@@ -119,10 +193,21 @@ body {
   text-align: center;
 }
 
-.service-item-dwelling,
-.service-item-souvenir,
-.service-item-food {
+.service-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.service-item {
+  height: 385px;
+  width: 400px;
+}
+
+.service-item-food {
+  background-color: #ffffff;
 }
 
 .service-item-title {
@@ -131,6 +216,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 183px;
 }
 
 .service-item-description{
@@ -138,7 +224,10 @@ body {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
-  }
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 81px;
+}
 
 .search-title {
   font-size: 30px;
@@ -146,14 +235,14 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  }
+}
 
 .search-description {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
-  }
+}
 
 .button-search {
   font-size: 20px;
@@ -164,7 +253,6 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .page-subscribe {
@@ -182,7 +270,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff
-  }
+}
 
 .subscribe-description {
   font-size: 22px;
@@ -190,7 +278,7 @@ body {
   font-weight: 400;
   text-align: center;
   color: #ffffff
-  }
+}
 
 .button-subscribe {
   font-size: 20px;
@@ -337,7 +425,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000
-  }
+}
 
 .inner-subscribe-description {
   font-size: 22px;
@@ -345,7 +433,7 @@ body {
   font-weight: 400;
   text-align: center;
   color: #000000
-  }
+}
 
 .subscribe-form {
   text-align: center;
