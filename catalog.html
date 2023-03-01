@@ -9,6 +9,7 @@
 
   <body>
     <div class="page-container">
+      <!-- навигация -->
       <header class="page-header" data-test="header">
         <h1 class="visually-hidden">Главное меню</h1>
         <nav class="navigation">
@@ -39,13 +40,14 @@
               </a>
             </li>
           </ul>
-          <a class="button-brown button-navigation" href="#">Хочу сюда!</a>
+          <a class="button-navigation" href="#">Хочу сюда!</a>
         </nav>
       </header>
 
       <main class="main-container main-inner">
+        <!-- хедер каталога -->
         <header class="inner-header" data-test="filter">
-          <!--добавить общий контейнер ?  -->
+          <!-- добавить ли общий контейнер ? -->
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -57,7 +59,7 @@
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
-
+          <!-- фильтр -->
           <section class="catalog-filter-hotels">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -113,13 +115,13 @@
             </form>
           </section>
         </header>
-
+        <!-- результаты поиска, сортировка -->
         <section class="search-results">
           <h2 class="title-search">Найдено гостиниц: 38</h2>
 
           <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала популярные</option>
             <option value="cheap">Сначала дешевые</option>
+            <option value="popular">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
 
@@ -135,12 +137,12 @@
             </li>
           </ul>
         </section>
-
+        <!-- карточки отелей -->
         <section class="catalog-hotels" data-test="catalog">
           <div class="catalog-hotels-container">
             <ul class="hotel-card-list">
               <li class="hotel-card-item">
-                <img class="hotel-card-image" src="images/hotel-1.jpg" wight="300" height="212" alt="amara resort.">
+                <img class="hotel-card-image" src="images/hotel-1.jpg" widht="300" height="212" alt="amara resort.">
                 <h3 class="hotel-card-title">Amara resort & spa</h3>
                 <p class="hotel-dwelling">Гостиница</p>
                 <p class="hotel-price">От 4000 ₽</p>
@@ -149,7 +151,7 @@
                 <!--Добавить "в избранном" и "рейтинг"-->
               </li>
               <li class="hotel-card-item">
-                <img class="hotel-card-image" src="images/hotel-2.jpg" wight="300" height="212"
+                <img class="hotel-card-image" src="images/hotel-2.jpg" widht="300" height="212"
                   alt="villas-at-poco-diablo.">
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                 <p class="hotel-dwelling">Гостиница</p>
@@ -159,7 +161,7 @@
                 <!--Добавить "в избранном" и "рейтинг"-->
               </li>
               <li class="hotel-card-item">
-                <img class="hotel-card-image" src="images/hotel-3.jpg" wight="300" height="212" alt="desert-quail-inn.">
+                <img class="hotel-card-image" src="images/hotel-3.jpg" widht="300" height="212" alt="desert-quail-inn.">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
                 <p class="hotel-dwelling">Гостиница</p>
                 <p class="hotel-price">От 2500 ₽</p>
@@ -168,7 +170,7 @@
                 <!--Добавить "в избранном" и "рейтинг"-->
               </li>
               <li class="hotel-card-item">
-                <img class="hotel-card-image" src="images/hotel-4.jpg" alt="greentree-inn.">
+                <img class="hotel-card-image" src="images/hotel-4.jpg" widht="300" height="212" alt="greentree-inn.">
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
                 <p class="hotel-dwelling">Гостиница</p>
                 <p class="hotel-price">От 1500 ₽</p>
@@ -178,7 +180,7 @@
               </li>
             </ul>
           </div>
-
+          <!-- пагинация -->
           <div class="pagination-container">
             <ul class="pagination">
               <li class="pagination-item">
@@ -202,7 +204,7 @@
             </ul>
           </div>
         </section>
-
+        <!-- подписаться -->
         <section class="page-subscribe inner-subscribe" data-test="subscribe">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <div class="page-subscribe-container inner-subscribe-container">
@@ -215,7 +217,7 @@
           </div>
         </section>
       </main>
-
+      <!-- футер -->
       <footer class="page-footer" data-test="footer">
         <div class="footer-contacts">
           <section class="footer-social">
