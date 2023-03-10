@@ -30,17 +30,27 @@
           <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-link-search" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="19" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#000"
+                    d="m18.9 17-3.7-3.67a8 8 0 0 0 1.7-4.87A8 8 0 0 0 8.9.5C4.5.5.9 4.18.9 8.56a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
+                </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-link-favorite" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#000"
+                    d="M9.3 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.9 0c1.3 0 2.5.5 3.5 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                </svg>
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorites">12</span>
               </a>
             </li>
+            <li class="navigation-user-item">
+              <a class="button-navigation" href="#">Хочу сюда!</a>
+            </li>
           </ul>
-          <a class="button-navigation" href="#">Хочу сюда!</a>
         </nav>
       </header>
 
@@ -137,14 +147,23 @@
           </select>
 
           <ul class="display-type">
-            <li class="display-item"><a class="button-transparent" href="#">
-                <span class="visually-hidden">Показать карточки</span></a>
+            <li class="display-item"><a class="button-display" href="#">
+              <svg class="display-type-icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000" d="M4 0H0v6h4V0Zm12 0h-4v6h4V0Zm-6 0H6v6h4V0ZM4 8H0v6h4V8Zm12 0h-4v6h4V8Zm-6 0H6v6h4V8Z"/>
+               </svg>
+              <span class="visually-hidden">Показать карточки</span></a>
             </li>
-            <li class="display-item"><a class="button-transparent" href="#">
-                <span class="visually-hidden">Показать один вариант</span></a>
+            <li class="display-item"><a class="button-display" href="#">
+              <svg class="display-type-icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/>
+              </svg>
+              <span class="visually-hidden">Показать один вариант</span></a>
             </li>
-            <li class="display-item"><a class="button-transparent" href="#">
-                <span class="visually-hidden">Список</span></a>
+            <li class="display-item"><a class="button-display" href="#">
+              <svg class="display-type-icon" aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000" d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z"/>
+              </svg>
+              <span class="visually-hidden">Список</span></a>
             </li>
           </ul>
         </section>
@@ -160,7 +179,7 @@
                   <span class="hotel-price">От 4000 ₽</span>
                   <a class="button-card-brown" href="#">Подробнее</a>
                   <a class="button-card-blu" href="#">В избранное</a>
-                  <span class="stars"><span class="visually-hidden">Звездность</span>Звездность</span>
+                  <span class="stars four-stars"><span class="visually-hidden">4 звезды</span></span>
                   <span class="rating">Рейтинг: 8,5</span>
                 </div>
               </li>
@@ -173,7 +192,7 @@
                   <span class="hotel-price">От 5000 ₽</span>
                   <a class="button-card-brown" href="#">Подробнее</a>
                   <a class="button-card-blu button-card-green" href="#">В избранном</a>
-                  <span class="stars"><span class="visually-hidden">Звездность</span>Звездность</span>
+                  <span class="stars four-stars"><span class="visually-hidden">4 звезды</span></span>
                   <span class="rating">Рейтинг: 9,2</span>
                 </div>
               </li>
@@ -185,7 +204,7 @@
                   <span class="hotel-price">От 2500 ₽</span>
                   <a class="button-card-brown" href="#">Подробнее</a>
                   <a class="button-card-blu" href="#">В избранное</a>
-                  <span class="stars"><span class="visually-hidden">Звездность</span>Звездность</span>
+                  <span class="stars three-stars"><span class="visually-hidden">3 звезды</span></span>
                   <span class="rating">Рейтинг: 6,9</span>
                 </div>
               </li>
@@ -197,7 +216,7 @@
                   <span class="hotel-price">От 1500 ₽</span>
                   <a class="button-card-brown" href="#">Подробнее</a>
                   <a class="button-card-blu" href="#">В избранное</a>
-                  <span class="stars"><span class="visually-hidden">Звездность</span>Звездность</span>
+                  <span class="stars two-stars"><span class="visually-hidden">2 звезды</span></span>
                   <span class="rating">Рейтинг: 5,0</span>
                 </div>
               </li>
@@ -232,7 +251,7 @@
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <div class="page-subscribe-container inner-subscribe-container">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="field" placeholder="Ваш e-mail" type="email" name="get-email" required>
               <button class="button-subscribe button-blu" type="submit">Подписаться</button>
