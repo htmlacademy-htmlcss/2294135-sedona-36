@@ -36,7 +36,7 @@
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-link-favorite" href="#">
                 <span class="visually-hidden">Избранное</span>
-                <sup>12</sup>
+                <span class="favorites">12</span>
               </a>
             </li>
           </ul>
@@ -47,7 +47,6 @@
       <main class="main-container main-inner">
         <!-- хедер каталога -->
         <header class="inner-header" data-test="filter">
-          <!-- добавить ли общий контейнер ? -->
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -106,10 +105,22 @@
                 <div class="catalog-right-column">
                   <fieldset class="catalog-filter-price">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                    <div class="range">
+                      <div class="range-container">
+                        <label for="input-min" class="filter-label">от</label>
+                        <input class="range-input" id="input-min" type="number" value="0" name="min-price">
+                      </div>
+                      <div class="range-container">
+                        <label for="input-max" class="filter-label">до</label>
+                        <input class="range-input" id="input-max" type="number" value="9000" name="max-price">
+                      </div>
+                    </div>
                   </fieldset>
 
-                  <button class="button-filter-blu" type="submit">Применить</button>
-                  <button class="button-filter-transparent" type="reset">Сбросить</button>
+                  <div class="button-filter-container">
+                    <button class="button-filter-blu" type="submit">Применить</button>
+                    <button class="button-filter-transparent" type="reset">Сбросить</button>
+                  </div>
                 </div>
               </div>
             </form>
@@ -144,39 +155,51 @@
               <li class="hotel-card-item">
                 <img class="hotel-card-image" src="images/hotel-1.jpg" widht="300" height="212" alt="amara resort.">
                 <h3 class="hotel-card-title">Amara resort & spa</h3>
-                <p class="hotel-dwelling">Гостиница</p>
-                <p class="hotel-price">От 4000 ₽</p>
-                <a class="button-card-brown" href="#">Подробнее</a>
-                <a class="button-card-blu" href="#">В Избранное</a>
-                <!--Добавить "в избранном" и "рейтинг"-->
+                <div class="card-container">
+                  <span class="hotel-dwelling">Гостиница</span>
+                  <span class="hotel-price">От 4000 ₽</span>
+                  <a class="button-card-brown" href="#">Подробнее</a>
+                  <a class="button-card-blu" href="#">В избранное</a>
+                  <span class="stars"><span class="visually-hidden">Звездность</span>Звездность</span>
+                  <span class="rating">Рейтинг: 8,5</span>
+                </div>
               </li>
               <li class="hotel-card-item">
                 <img class="hotel-card-image" src="images/hotel-2.jpg" widht="300" height="212"
                   alt="villas-at-poco-diablo.">
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-                <p class="hotel-dwelling">Гостиница</p>
-                <p class="hotel-price">От 5000 ₽</p>
-                <a class="button-card-brown" href="#">Подробнее</a>
-                <a class="button-card-blu" href="#">В Избранное</a>
-                <!--Добавить "в избранном" и "рейтинг"-->
+                <div class="card-container">
+                  <span class="hotel-dwelling">Гостиница</span>
+                  <span class="hotel-price">От 5000 ₽</span>
+                  <a class="button-card-brown" href="#">Подробнее</a>
+                  <a class="button-card-blu button-card-green" href="#">В избранном</a>
+                  <span class="stars"><span class="visually-hidden">Звездность</span>Звездность</span>
+                  <span class="rating">Рейтинг: 9,2</span>
+                </div>
               </li>
               <li class="hotel-card-item">
                 <img class="hotel-card-image" src="images/hotel-3.jpg" widht="300" height="212" alt="desert-quail-inn.">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
-                <p class="hotel-dwelling">Гостиница</p>
-                <p class="hotel-price">От 2500 ₽</p>
-                <a class="button-card-brown" href="#">Подробнее</a>
-                <a class="button-card-blu" href="#">В Избранное</a>
-                <!--Добавить "в избранном" и "рейтинг"-->
+                <div class="card-container">
+                  <span class="hotel-dwelling">Гостиница</span>
+                  <span class="hotel-price">От 2500 ₽</span>
+                  <a class="button-card-brown" href="#">Подробнее</a>
+                  <a class="button-card-blu" href="#">В избранное</a>
+                  <span class="stars"><span class="visually-hidden">Звездность</span>Звездность</span>
+                  <span class="rating">Рейтинг: 6,9</span>
+                </div>
               </li>
               <li class="hotel-card-item">
                 <img class="hotel-card-image" src="images/hotel-4.jpg" widht="300" height="212" alt="greentree-inn.">
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
-                <p class="hotel-dwelling">Гостиница</p>
-                <p class="hotel-price">От 1500 ₽</p>
-                <a class="button-card-brown" href="#">Подробнее</a>
-                <a class="button-card-blu" href="#">В Избранное</a>
-                <!--Добавить "в избранном" и "рейтинг"-->
+                <div class="card-container">
+                  <span class="hotel-dwelling">Гостиница</span>
+                  <span class="hotel-price">От 1500 ₽</span>
+                  <a class="button-card-brown" href="#">Подробнее</a>
+                  <a class="button-card-blu" href="#">В избранное</a>
+                  <span class="stars"><span class="visually-hidden">Звездность</span>Звездность</span>
+                  <span class="rating">Рейтинг: 5,0</span>
+                </div>
               </li>
             </ul>
           </div>
@@ -223,17 +246,17 @@
           <section class="footer-social">
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="button-social" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">vk</span>
+                <a class="button-social button-social-vk" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">vkontakte</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button-social" href="https://t.me/htmlacademy">
+                <a class="button-social button-social-tme" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
+                <a class="button-social button-social-ut" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
