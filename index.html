@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -215,13 +217,13 @@
               <div class="appointment-form-date">
                 <label class="modal-form-label" for="appointment-date-check-in">Дата Заезда:</label>
                 <input class="modal-form-input field" type="text" id="appointment-date-check-in"
-                  name="appointment-date-check-in" placeholder="Укажите дату">
+                  name="appointment-date-check-in" placeholder="Укажите дату" value="27 апреля 2020">
                 <span class="input-comment input-comment-mistake">Мы не можем отправить вас в прошлое.</span>
               </div>
               <div class="appointment-form-date">
                 <label class="modal-form-label" for="appointment-date-check-out">Дата Выезда:</label>
-                <input class="modal-form-input field" type="text" id="for=" appointment-date-check-in"
-                  name="appointment-date-check-out" placeholder="Укажите дату">
+                <input class="modal-form-input field" type="text" id="appointment-date-check-out"
+                  name="appointment-date-check-out" placeholder="Укажите дату" value="1 сентября 2023">
                 <span class="input-comment">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <div class="appointment-form-guest">
@@ -237,7 +239,7 @@
                       </svg>
                     </button>
                     <input class="modal-form-input-number" id="guest-adult" type="number" name="guest-adult"
-                      placeholder="2">
+                      placeholder="0" value="2">
                     <button class="wrapper-input-button" type="button">
                       <span class="visually-hidden">
                         Увеличить значение на одну единицу</span>
@@ -273,7 +275,7 @@
                       </svg>
                     </button>
                     <input class="modal-form-input-number" id="guest-children" type="number" name="guest-children"
-                      placeholder="2">
+                      placeholder="0" value="2">
                     <button class="wrapper-input-button" type="button">
                       <span class="visually-hidden">
                         Увеличить значение на одну единицу</span>

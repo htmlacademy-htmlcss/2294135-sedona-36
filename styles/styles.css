@@ -41,18 +41,7 @@ body {
   flex-grow: 1;
 }
 
-li h3,
-fieldset,
-h1,
-h2,
-h3 {
-  margin: 0;
-  /* проверить отступы, запись убрать */
-}
-
-
 /* хедер навигация */
-
 
 .navigation {
   display: flex;
@@ -93,7 +82,6 @@ h3 {
   position: relative;
 }
 
-
 .navigation-link-current::after {
   content: "";
   width: calc(100% - 32px);
@@ -133,7 +121,6 @@ navigation-user-link-favorite {
   bottom: 0;
   left: 0;
   margin: auto;
-  /* fill: #dbdbdb; */
 }
 
 .favorites {
@@ -217,7 +204,6 @@ navigation-user-link-favorite {
 .hero-img {
   display: block;
   margin: 0 auto;
-
 }
 
 .title {
@@ -391,6 +377,7 @@ navigation-user-link-favorite {
 }
 
 .service-item-title {
+  margin: 0 auto;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -399,22 +386,22 @@ navigation-user-link-favorite {
   padding-top: 102px;
 }
 
-.service-item-dwelling .service-item-title {
+.service-item-dwelling {
   background-image: url(../images/icons/house.svg);
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: 50% 26%;
 }
 
-.service-item-food .service-item-title {
-  background-image: url(../images/icons/food.svg);
+.service-item-food {
+  background-image: url(../images/icons/burger.svg);
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: 50% 26%;
 }
 
-.service-item-souvenir .service-item-title {
+.service-item-souvenir {
   background-image: url(../images/icons/present.svg);
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: 50% 26%;
 }
 
 .service-item-description {
@@ -491,10 +478,11 @@ navigation-user-link-favorite {
 }
 
 /* подписаться */
+
 .page-subscribe {
   color: #ffffff;
   background-color: #82B3D3;
-  background-image: url("../images/subscribe.jpg");
+  background-image: url("../images/subscribe1.jpg");
   background-size: auto;
   background-repeat: no-repeat;
   width: 1200px;
@@ -545,6 +533,7 @@ navigation-user-link-favorite {
   width: 232px;
   min-height: 52px;
   border-radius: 0 4px 4px 0;
+  border: none;
 }
 
 .button-subscribe:hover {
@@ -580,11 +569,6 @@ navigation-user-link-favorite {
   border-radius: 4px 0 0 4px;
 }
 
-input,
-button {
-  padding: 0;
-  border: none;
-}
 
 /* футер */
 
@@ -780,24 +764,35 @@ button {
   padding-left: 20px;
   border-radius: 4px;
   padding-top: 2px;
+  position: relative;
+  background-image: url("../images/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.modal-form-input:after {
+  content: '';
+  background-image: url("../images/icons/calendar.svg");
+  width: 16px;
+  height: 15px;
+  position: absolute;
 }
 
 .children-container label {
   padding-left: 3px;
 }
 
-/* Hover, active */
 .field:hover,
 .field:active {
   background-color: #e6e6e6;
   outline: none;
+  border: none;
 }
 
 .field:focus {
   outline: 3px solid #82B3D3;
 }
 
-/* Disabled */
 .field:disabled,
 .field:disabled:hover {
   color: rgba(0, 0, 0, 0.3);
@@ -811,16 +806,6 @@ button {
   border: none;
   outline: none;
 }
-
-
-/* найти календарь */
-/* .modal-form-input:after {
-  content: '';
-  background-image: url("../images/icons/calendar.svg");
-  width: 16px;
-  height: 15px;
-  position: absolute;
-} */
 
 .input-comment {
   font-size: 16px;
@@ -872,9 +857,20 @@ button {
   fill: #000000;
 }
 
+.wrapper-input-button:active .svg-input-button {
+  outline: 3px solid #82B3D3;
+  outline-offset: 3px;
+  border: none;
+}
+
 .wrapper-input-button:focus .svg-input-button {
   outline: 3px solid #82B3D3;
   outline-offset: 3px;
+  fill: #000000;
+}
+
+.wrapper-input-button:focus {
+  outline: none;
 }
 
 .modal-form-input-number {
@@ -894,7 +890,6 @@ button {
 .modal-form-input-number::-webkit-outer-spin-button {
   display: none;
 }
-
 
 .tooltip-toggle {
   border: none;
@@ -922,13 +917,12 @@ button {
   text-transform: none;
   padding: 21px 17px 22px 23px;
   border-radius: 10px;
-  display: block;
   width: 216px;
   position: absolute;
   top: 100%;
   margin-top: 24px;
   transform: translateX(-45%);
-  /* display: none; */
+  display: none;
 }
 
 .tooltip-text:after {
@@ -1287,11 +1281,13 @@ fieldset {
 .range-button-min {
   top: -8px;
   left: -1px;
+  border: none;
 }
 
 .range-button-max {
   top: -8px;
-  right: 0px;
+  right: 0;
+  border: none;
 }
 
 .button-filter-container {
@@ -1380,6 +1376,7 @@ fieldset {
 }
 
 .title-search {
+  margin: 0 auto;
   width: 538px;
   font-size: 30px;
   line-height: 36px;
@@ -1403,7 +1400,6 @@ fieldset {
   background-image: url("../images/icons/down-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
-
 }
 
 .select-control:hover {
@@ -1476,7 +1472,6 @@ fieldset {
   margin: auto;
   fill: #dbdbdb;
 }
-
 
 /* карточки отелей */
 
