@@ -764,18 +764,10 @@ navigation-user-link-favorite {
   padding-left: 20px;
   border-radius: 4px;
   padding-top: 2px;
-  position: relative;
   background-image: url("../images/icons/calendar.svg");
   background-repeat: no-repeat;
-  background-position: right 16px center;
-}
-
-.modal-form-input:after {
-  content: '';
-  background-image: url("../images/icons/calendar.svg");
-  width: 16px;
-  height: 15px;
-  position: absolute;
+  background-position: right 19px center;
+  border: none;
 }
 
 .children-container label {
@@ -844,6 +836,7 @@ navigation-user-link-favorite {
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 
 .svg-input-button {
@@ -884,6 +877,7 @@ navigation-user-link-favorite {
   color: #000000;
   background-color: #f2f2f2;
   text-align: center;
+  border: none;
 }
 
 .modal-form-input-number::-webkit-inner-spin-button,
@@ -966,6 +960,7 @@ navigation-user-link-favorite {
   vertical-align: middle;
   margin-top: 48px;
   cursor: pointer;
+  border: none;
 }
 
 .modal-search-button:hover {
