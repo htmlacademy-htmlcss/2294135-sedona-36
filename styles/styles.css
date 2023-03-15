@@ -110,7 +110,7 @@ body {
   position: relative;
 }
 
-navigation-user-link-favorite {
+.navigation-user-link-favorite {
   position: relative;
 }
 
@@ -534,6 +534,7 @@ navigation-user-link-favorite {
   min-height: 52px;
   border-radius: 0 4px 4px 0;
   border: none;
+  cursor: pointer;
 }
 
 .button-subscribe:hover {
@@ -1064,11 +1065,6 @@ navigation-user-link-favorite {
   margin-bottom: 31px;
 }
 
-fieldset {
-  padding: 0;
-  border: 0;
-}
-
 .catalog-left-column,
 .catalog-right-column {
   display: flex;
@@ -1082,10 +1078,18 @@ fieldset {
 
 .catalog-filter-infrastructure {
   width: 200px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+
 }
 
 .catalog-filter-dwelling {
   width: 200px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+
 }
 
 .catalog-filter-list {
@@ -1169,6 +1173,9 @@ fieldset {
 
 .catalog-filter-price {
   width: 288;
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
 .range-price {
