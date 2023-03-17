@@ -1457,7 +1457,7 @@ background-color: #ffffff;
 }
 
 .select-control {
-  font: inherit;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   margin-right: 71px;
@@ -1466,16 +1466,15 @@ background-color: #ffffff;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
   height: 48px;
-  font-family: "PT Sans", sans-serif;
   appearance: none;
+  background-color: #ffffff;
   background-image: url("../images/icons/down-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
 }
 
 .select-control:hover {
-  border-radius: 4px;
-  border: 2px solid #82b3d3;
+  border-color: 2px solid #82b3d3;
 }
 
 .select-control:focus {
@@ -1484,14 +1483,17 @@ background-color: #ffffff;
 }
 
 .select-control:active {
-  border-radius: 4px;
   border: 2px solid #3f5e72;
 }
 
-.select-control:disabled,
-.select-control:disabled:hover {
-  opacity: 0.3;
+.select-control:disabled {
   border: 2px solid #000000;
+  opacity: 0.3;
+}
+
+.select-control:disabled:hover {
+  border: 2px solid #000000;
+  opacity: 0.3;
 }
 
 .display-type {
