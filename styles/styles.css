@@ -361,7 +361,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: #ffffff;
 }
 
 .service-item {
@@ -371,12 +371,14 @@ body {
   display: grid;
   grid-template-columns: 230px;
   gap: 31px;
+  align-content: flex-start;
   padding: 81px 85px;
   box-sizing: border-box;
 }
 
-.service-item.service-item:nth-child(2n) {
-background-color: #ffffff;
+.service-item.service-item:nth-child(2n+1) {
+background-color: rgba(131, 179, 211, 0.12);
+
 }
 
 .service-item-title {
@@ -882,6 +884,7 @@ background-color: #ffffff;
   align-items: center;
   justify-content: center;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .svg-input-button {
@@ -909,6 +912,7 @@ background-color: #ffffff;
   outline: 3px solid #82b3d3;
   outline-offset: 3px;
   border: none;
+  fill:  rgba(117, 97, 87, 0.3);
 }
 
 .modal-form-input-number {
@@ -1460,6 +1464,7 @@ background-color: #ffffff;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
   margin-right: 71px;
   padding: 12px 43px 12px 19px;
   width: 292px;
